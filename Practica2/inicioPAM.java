@@ -36,7 +36,8 @@ public class inicioPAM {
                         "Presentación de trabajo calidad universitaria\n" + //
                         "Todos los trabajos llevan portada estilo libre: Logo UPQ, tema, datos de alumno, materia\n" + //
                         "Conclusiones de aprendizaje: Descripción de lo aprendido durante el desarrollo de la actividad \n" + //
-                        "No usar chat en prácticas o examen";
+                        "Asistencia del 80%\n" + //
+                        "No usar chat en prácticas o examen";
     }
 
     public String FechasdeParciales() {
