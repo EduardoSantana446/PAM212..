@@ -1,0 +1,1 @@
+document.writw("<h1>Hola Mundo</h1>");
