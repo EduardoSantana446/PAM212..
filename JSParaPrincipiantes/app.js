@@ -1,1 +1,2 @@
-console.long({"Üsername": "ryan", "Score": 70.4});
+name = "john";
+console.log(name);
