@@ -1,16 +1,5 @@
-var name = "john";
-let lastName = "carter";
+let numberOne = 60;
+let numberTwo = 100;
 
-name = "peter";
-
-const Pi = 3.14;
-PI = 100;
-console.log(PI);
-
-// bkubfktfbkf
-
-/* bekbrkbkbrbke 
-rbebkjbkj
-erdrbdbdkdjebk
-
-*/
+let result = numberOne + numberTwo;
+console.log(result);
