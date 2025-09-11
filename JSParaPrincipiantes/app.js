@@ -1,9 +1,12 @@
-let score = 70;
+let typeCard = "Deit Card";
 
-if (score > 30) {
-    console.log('You need practice more');
-} else if (score > 15) {
-    console.log('Estas mejorando');
-} else {
-    console.log('You need to follow this tutorial');
+switch (typeCard) {
+    case "Deit Card":
+        console.log("Tarjeta de débito");
+        break;
+    case "Credit Card":
+        console.log("Tarjeta de crédito");
+        break;
+    default: 
+        console.log('No card');     
 }
