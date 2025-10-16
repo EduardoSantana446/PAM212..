@@ -1,13 +1,12 @@
-import ContadorScreen from './src/screens/ContadorScreen';
+import MenuScreen from './screens/MenuScreen';
 
 // 2. Main: zona de ejecucion o componentes
 export default function App() {
 
   return (
 
-    <ContadorScreen></ContadorScreen>
+    <MenuScreen></MenuScreen>
 
   );
 }
 
-// 3. Styles: zona de estilos

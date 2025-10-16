@@ -1,5 +1,3 @@
-package Practica2;
-
 public class inicioPAM {
 
     public String ReglamentoPOO() {
