@@ -1,6 +1,6 @@
 import { Text, StyleSheet, View, Button } from 'react-native'
 import React, { useState } from 'react';
-import BotonesScreen from './BotonesScreen';
+import BotonesScreen from './Botones/BotonesScreen';
 import ContadorScreen from './ContadorScreen';
 import TextImput from './TextImput';
 import ScrollView from './ScrollView';
