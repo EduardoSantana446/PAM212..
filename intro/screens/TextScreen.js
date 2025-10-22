@@ -27,6 +27,7 @@ export default function TextScreen() {
 
   return (
     <View style={styles.container}>
+      
       <Text style={styles.title}>Formulario de ejemplo</Text>
 
       <TextInput
@@ -39,8 +40,8 @@ export default function TextScreen() {
       <TextInput
         style={styles.input}
         placeholder="Escribe tu contraseña"
-        value={contraseña}
-        onChangeText={setContraseña}
+        value={contrasena}
+        onChangeText={setContrasena}
         secureTextEntry={true}
       />
 

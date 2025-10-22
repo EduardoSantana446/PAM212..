@@ -34,25 +34,49 @@ export default function MenuScreen() {
         case 'menu':
             default:
                  return (
-                     <View>
-                     <Text>Menu de Practicas</Text>
-                     <Button color='red' onPress={()=>setScreen('contador')} title='Pract: Contador'/>
-                     <Button color='red' onPress={()=>setScreen('botones')} title='Pract: Botones'/>
-                     <Button color='red' onPress={()=>setScreen('EntradaTexto')} title='Pract: Entrada de Texto'/>
-                     <Button color='red' onPress={()=>setScreen('ScrollView')} title='Pract: ScrollView'/>
-                     <Button color='red' onPress={()=>setScreen('ImageBackgroung')} title='Pract: Backgroung'/>
-                     <Button color='red' onPress={()=>setScreen('ActivityIndicator')} title='Pract: Indicador de actividad'/>
-                     <Button color='red' onPress={()=>setScreen('FlatList')} title='Pract: Lista Plana'/>
-                     <Button color='red' onPress={()=>setScreen('Modal')} title='Pract: Modal'/>
-                     <Button color='red' onPress={()=>setScreen('BottonSheet')} title='Pract: BottonSheet'/>                    
+                     <View style={styles.container}>
+                     <Text style={styles.title}>Menu de Practicas</Text>
+                     <View style={styles.buttonContainer}>
+                        <Button color='red' onPress={()=>setScreen('contador')} title='Pract: Contador'/>
+                        <Button color='red' onPress={()=>setScreen('botones')} title='Pract: Botones'/>
+                        <Button color='red' onPress={()=>setScreen('EntradaTexto')} title='Pract: Entrada de Texto'/>
+                        <Button color='red' onPress={()=>setScreen('ImageBackgroung')} title='Pract: Backgroung'/>
+                        <Button color='red' onPress={()=>setScreen('ScrollView')} title='Pract: ScrollView'/>
+                        <Button color='red' onPress={()=>setScreen('ActivityIndicator')} title='Pract: Indicador de actividad'/>
+                        <Button color='red' onPress={()=>setScreen('FlatList')} title='Pract: Lista Plana'/>
+                        <Button color='red' onPress={()=>setScreen('Modal')} title='Pract: Modal'/>
+                        <Button color='red' onPress={()=>setScreen('BottonSheet')} title='Pract: BottonSheet'/>
+                     </View>                   
                      
                      </View>
-    )
+                    )
 
     }
 
 }
 
 const styles = StyleSheet.create({
+
+  container: 
+  {
+    flex: 1,
+    backgroundColor: '#080808ff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  title: {
+    color: '#ffffff',
+    fontSize: 30,
+    marginBottom: 20,
+  },
+
+  buttonContainer: {
+    width: '20%',
+    gap: 15,
+  }
+
+
+
 
 })
