@@ -1,69 +1,71 @@
-import { Text, StyleSheet, View, Modal, Button } from 'react-native';
-import React, { useState } from 'react';
+import React, {useState} from "react";
+import {Modal, View, Text, Button, Stylesheet} from "react-native";
 
-export default function ModalEjemplo() 
-{
-  const [modalVisible, setModalVisible] = useState(false);
+export default function modalscreen(){
+    const [modalVisible, setModalVisible] = useState(false); 
 
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>Modal</Text>
-        <Button title='Abrir Modal' onPress={()=>setModalVisible(true)}/>
-        <Modal
+    const abrirModal=() => {
+        setModalVisible(true);
+    };
 
-          animationType='slide'
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={(false)}
-        >
-          <View style={styles.modalcontainer}>
-            <View style={styles.modalView}>
-              <Text style={styles.modalText}>Hola, soy un modal</Text>
-              <Button title='Cerrar Modal' onPress={()=>setModalVisible(false)}/>
-            </View>
-          </View>
+    const cerrarModal=() =>{
+        setModalVisible(false);
+    };
 
-        </Modal>
-        
-      </View>
-    )
+    return(
+        <View style={styles.container}>
+            <Text style={styles.title}>ejemplo del componente modal</Text>
+
+            <Button title="abrir Modal" onPress={abrirModal}/>
+
+            <Modal
+              animationType="fade"
+              transparent={true}
+              visible={modalVisible}
+              onRequestClose={cerrarModal}>
+                <View style={styles.modalContainer}>
+                    <View style={styles.modalView}>
+                        <Text style={styles.modalText}> hola Moda</Text>
+                        <Button title="Cerrar Modal" onPress={cerrarModal}/>
+                    </View>
+                </View>
+
+            </Modal>
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: 
-  {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#EAEAEA',
-  },
-  title: 
-  {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  modalContainer: 
-  {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: 'rgba(0,0,0,0.4)', 
-  },
-  modalView: 
-  {
-    margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 15,
-    padding: 35,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  modalText: 
-  {
-    marginBottom: 15,
-    fontSize: 16,
-  },
+const styles = Stylesheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center', 
+        backgroundColor: '#FFFF',
+    },
+    title: {
+        fontSize: 20, 
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    modalContainer:{
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#rgba(0,0,0,0.4)',
+    },
+    modalView: {
+        margin:20,
+        backgroundColor: '#FFFF',
+        borderRadius: 15,
+        padding: 35,
+        alingItems: 'center',
+        shadowColor: '#000',
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
+    },
+    modalText: {
+        marginBottom: 15,
+        fontSize: 16,
+    },
+    
 });
